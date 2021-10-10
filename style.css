@@ -30,10 +30,6 @@ a:hover {
    align-items: center;
  }
  
- #logo {
-  
- }
- 
  #logo img:hover {
  border: solid .5px rgb(223, 13, 188);
  border-radius: 5px;
@@ -62,7 +58,7 @@ a:hover {
  .left-intro {
    width: 35%;
    height: 500px;
-   background-color: rgb(187, 28, 28);
+   background-color: black;
    margin-top: 70px;
    margin-bottom: 90px;
    display: flex;
@@ -264,13 +260,116 @@ h3 {
   position:absolute;
 }
 
- 
-ul {
+.left-highlight ul {
   font-family: 'Montserrat', sans-serif;
   font-size: 10px; 
   color: white;
   line-height: 25px;
 }
+
+.keyskills{
+  background-color: black;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+ }
+
+.graph-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.graph img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.about{
+  background-color: black;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+ }
+
+ #about-head {
+   margin-bottom: 40px;
+ }
+
+.about-text p {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px; 
+  color: white;
+  line-height: 25px;
+ }
+
+ .contact{
+  background-color: black;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+ }
+
+ #contact-head {
+  margin-bottom: 40px;
+}
+
+
+ form * {
+  display: block;
+  width: 40%;
+  margin: 1em;
+  margin-left: 50px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+label {
+  font-family: 'Fira Sans', sans-serif;
+  color: white;
+}
+
+input[type=text], [type=textarea], [type=tel] {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px; 
+  color: rgb(223, 13, 188);
+  border: solid 1px white;
+  border-radius: 5px;
+  background-color: black;
+  height: 20px;
+}
+
+#message {
+  background-color: black;
+  border: solid 1px white;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px; 
+  color: rgb(223, 13, 188);
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  font-family: 'Fira Sans', sans-serif;
+  border: rgb(223, 13, 188) solid 2px;
+  background-color: black;
+  color: rgb(223, 13, 188);
+  border-radius: 5px;
+  width: 100px;
+  padding: 5px;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.contact {
+  margin-bottom: 100px;
+}
+
 
 .mambo-video {
   display: flex;
