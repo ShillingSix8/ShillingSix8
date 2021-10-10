@@ -290,7 +290,6 @@ h3 {
   width: 85%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 100px;
  }
 
  #about-head {
@@ -307,12 +306,13 @@ h3 {
   line-height: 25px;
  }
 
- .contact{
+ .contact {
   background-color: black;
   width: 85%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 100px;
+  margin-bottom: 100px;
  }
 
  #contact-head {
@@ -366,10 +366,33 @@ input[type=button], input[type=submit], input[type=reset] {
   margin-left: 50px;
 }
 
-.contact {
-  margin-bottom: 100px;
+.project-grid{
+  background-color: black;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+ }
+
+ .project-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
+.projects img {
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.sizzle-grid{
+  background-color: black;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+ }
 
 .mambo-video {
   display: flex;
