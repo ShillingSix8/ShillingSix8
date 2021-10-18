@@ -42,6 +42,13 @@ a:hover {
    font-size: 10px;
    font-family: 'Rubik', sans-serif;
  }
+
+ #welcome {
+  background-color: black;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+ }
  
  .introduction {
   background-color: black;
@@ -59,7 +66,7 @@ a:hover {
    width: 35%;
    height: 500px;
    background-color: black;
-   margin-top: 70px;
+   margin-top: 20px;
    margin-bottom: 90px;
    display: flex;
   flex-direction: column;
@@ -126,7 +133,7 @@ a:hover {
   margin-top: -9px;
   font-family: 'Montserrat', sans-serif;
   font-size: 10px;
-  line-height: 15px;
+  line-height: 17px;
   color: rgb(138, 135, 129);
 }
 
@@ -174,9 +181,9 @@ a:hover {
  
  .right-intro {
    width: 60%;
-   height: 500px;
+   height: 600px;
    background-color: white;
-   margin-top: 70px;
+   margin-top: 30px;
    margin-bottom: 90px;
    overflow:hidden;
   position:relative;
@@ -373,12 +380,20 @@ input[type=button], input[type=submit], input[type=reset] {
   margin-right: auto;
  }
 
- .pinterest{
+ #topper{
   background-color: black;
   width: 85%;
   margin-left: auto;
   margin-right: auto;
  }
+
+ .pinterest {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
 
 .project-grid{
   background-color: black;
@@ -397,8 +412,8 @@ input[type=button], input[type=submit], input[type=reset] {
 .projects img {
   max-width: 100%;
   max-height: 100%;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .sizzle-grid{
@@ -413,5 +428,5 @@ input[type=button], input[type=submit], input[type=reset] {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px;
+  padding: 20px;
 }
