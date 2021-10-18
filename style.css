@@ -35,7 +35,7 @@ a:hover {
  border-radius: 5px;
  }
  
- #home, #resume, #highlights, #keyskills, #about, #contact, #contact, #projects, #sizzle {
+ #home, #background, #projects, #sizzle, #blogger, #pin {
    background-color: black;
    margin: 3px;
    padding: 10px;
@@ -365,6 +365,20 @@ input[type=button], input[type=submit], input[type=reset] {
   margin-top: 20px;
   margin-left: 50px;
 }
+
+.tumblr{
+  background-color: black;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+ }
+
+ .pinterest{
+  background-color: black;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+ }
 
 .project-grid{
   background-color: black;
