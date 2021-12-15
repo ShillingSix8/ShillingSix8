@@ -1,456 +1,217 @@
+
+/* ------------ Landing Page CSS------------  */
+
 body {
-  background-color: black;
+  background-color: rgb(255, 255, 255);
 }
 
 a {
   font-family: "Montserrat", sans-serif;
-  color: white;
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
 
-a:hover {
-  color: white;
-  text-decoration: underline;
-  text-decoration-color: rgb(223, 13, 188);
-}
-
-.wrapper {
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-bar {
-  background-color: black;
-  width: 75%;
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  background-color: rgb(255, 255, 255);
+  width: 80%;
+  height: 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: left;
   align-items: center;
 }
 
 #logo img:hover {
-  border: solid 0.5px rgb(223, 13, 188);
-  border-radius: 5px;
+  border-left: solid 0.5px rgb(0, 0, 0);
+  border-right: solid 0.5px rgb(0, 0, 0);
 }
 
-#home,
-#background,
-#projects,
-#sizzle,
-#blogger,
-#inspo {
-  background-color: black;
+nav:hover {
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+  font-style: italic;
+  text-decoration-color: rgb(0, 0, 0);
+}
+
+#landing-image {
+  background-color: blue;
+  width: 90%;
+  height: 600px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  }
+
+.mySlides {
+  width: 100%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+  .foot-bar {
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    height: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  }
+
+#about, #work, #inspo, #phone, #copyright, #contact {
   margin: 3px;
   padding: 10px;
   font-size: 10px;
   font-family: "Rubik", sans-serif;
 }
 
-#welcome {
-  background-color: black;
-  width: 85%;
-  margin-left: auto;
-  margin-right: auto;
-}
+/* ------------ Inspiration CSS------------  */
 
-.introduction {
-  background-color: black;
-  width: 85%;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.left-intro {
-  width: 35%;
-  height: 500px;
-  background-color: black;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.left-intro-column {
-  background-color: black;
-  height: 500px;
-  align-items: flex-start;
-  text-align: right;
-}
-
-#firstname {
-  height: 20px;
-  margin-top: -6px;
-  font-family: "Rubik", sans-serif;
-  font-style: italic;
-  font-weight: bold;
-  color: white;
-  font-size: 6vw;
-}
-
-#lastname {
-  height: 20px;
-  margin-top: -10px;
-  font-size: 8vw;
-  font-family: "Rubik", sans-serif;
-  font-weight: bold;
-  color: black;
-  -webkit-text-stroke: 1.25px rgb(223, 13, 188);
-}
-
-#headshot {
-  margin-top: 5px;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-}
-
-#headshot:hover {
-  color: white;
-  border: solid 1.25px rgb(223, 13, 188);
-}
-
-#title {
-  margin-top: 10px;
-  font-family: "Fira Sans", sans-serif;
-  font-style: italic;
-  font-weight: bold;
-  font-size: 15px;
-  color: rgb(138, 135, 129);
-}
-
-#info1 {
-  margin-top: -2px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 10px;
-  line-height: 15px;
-  color: rgb(138, 135, 129);
-}
-
-#info2 {
-  margin-top: -9px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 10px;
-  line-height: 17px;
-  color: rgb(138, 135, 129);
-}
-
-.button1 {
-  font-family: "Fira Sans", sans-serif;
-  border: none;
-  background-color: rgb(223, 13, 188);
-  color: black;
-  border-radius: 5px;
-  padding: 5px 40px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 12px;
-  cursor: pointer;
-  margin-top: 5px;
-  margin-bottom: 10px;
-}
-
-.button1:hover {
-  background-color: white;
-  color: black;
-}
-
-.button2 {
-  font-family: "Fira Sans", sans-serif;
-  border: rgb(223, 13, 188) solid 2px;
-  background-color: black;
-  color: rgb(223, 13, 188);
-  border-radius: 5px;
-  padding: 5px 20px;
-  margin-left: 30px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 12px;
-  cursor: pointer;
-}
-
-.button2:hover {
-  background-color: black;
-  color: white;
-  border: white solid 2px;
-}
-
-.right-intro {
-  background-color: black;
-  width: 60%;
-  height: 600px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  border-radius: 20px;
-}
-
-.mySlides{
-height: 600px;
-width: auto;
-justify-content: center;
-align-items: center;
-border-radius: 20px;
-}
-
-.mySlides img {
-
-}
-
-.information {
-  background-color: black;
-  width: 85%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-h3 {
-  font-family: "Rubik", sans-serif;
-  font-size: 14px;
-  color: white;
-  text-align: left;
-  width: 200px;
-}
-
-.resume-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.resume img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.highlights-title {
-  background-color: black;
-  width: 85%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
-  margin-bottom: -40px;
-}
-
-.highlights {
-  background-color: black;
-  width: 85%;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.highlight-intro {
-  background-color: black;
-  width: 35%;
-  height: 500px;
-}
-
-.highlight-image {
-  background-color: black;
-  width: 60%;
-  height: 550px;
-  overflow: hidden;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-}
-
-.highlight-image img {
-  position: absolute;
-}
-
-.left-highlight ul {
-  font-family: "Montserrat", sans-serif;
-  font-size: 10px;
-  color: white;
-  line-height: 25px;
-}
-
-.keyskills {
-  background-color: black;
-  width: 85%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.graph-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.graph img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.about {
-  background-color: black;
-  width: 85%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#about-head {
-  margin-bottom: 40px;
-}
-
-.about-text p {
+.social {
+  background-color: rgb(53, 19, 179);
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-  font-family: "Montserrat", sans-serif;
-  font-size: 10px;
-  color: white;
-  line-height: 25px;
-}
-
-.contact {
-  background-color: black;
-  width: 85%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-
-#contact-head {
-  margin-bottom: 40px;
-}
-
-form * {
-  display: block;
-  width: 40%;
-  margin: 1em;
-  margin-left: 50px;
-  font-family: "Montserrat", sans-serif;
-}
-
-label {
-  font-family: "Fira Sans", sans-serif;
-  color: white;
-}
-
-input[type="text"],
-[type="textarea"],
-[type="tel"] {
-  font-family: "Montserrat", sans-serif;
-  font-size: 10px;
-  color: rgb(223, 13, 188);
-  border: solid 1px white;
-  border-radius: 5px;
-  background-color: black;
-  height: 20px;
-}
-
-#message {
-  background-color: black;
-  border: solid 1px white;
-  border-radius: 5px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 10px;
-  color: rgb(223, 13, 188);
-}
-
-input[type="button"],
-input[type="submit"],
-input[type="reset"] {
-  font-family: "Fira Sans", sans-serif;
-  border: rgb(223, 13, 188) solid 2px;
-  background-color: black;
-  color: rgb(223, 13, 188);
-  border-radius: 5px;
-  width: 100px;
-  padding: 5px;
-  text-decoration: none;
-  margin-left: 10px;
-  margin-top: 20px;
-  margin-left: 50px;
-}
-
-.tumblr {
-  background-color: black;
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#toptumblr {
-  background-color: black;
-  width: 85%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.social {
-  background-color: black;
-  width: 85%;
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: 20px;
 }
 
 .socialbox {
+  background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: row;
-  justify-content: center
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+  height: 750px;
 }
 
 #leftsocial {
   width: 50%;
   margin: 10px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden
+  background-color: blue;
 }
 
 #rightsocial {
   width: 50%;
   margin: 10px;
-}
-
-.project-grid {
-  background-color: black;
-  width: 85%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.project-img {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  overflow: hidden
+  background-color: blue;
 }
 
-.projects img {
-  max-width: 100%;
-  max-height: 100%;
-  margin-top: 10px;
-  margin-bottom: 20px;
+/* ------------ Work CSS ------------  */
+
+  .card-block {
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    width: 90%; 
+  }
+
+  .row {
+    display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  }
+
+  .left-col {
+    width: 25%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    margin: 20px;
+    font-size: 10px;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .right-col {
+    width: 66%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin: 20px;
+  }
+
+  .right-col img {
+    width: 100%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  }
+
+  .card-block:hover {
+    border-bottom: solid 0.5px rgb(0, 0, 0);
+    padding-bottom: 5px;
+    border-right: solid 0.5px rgb(0, 0, 0);
+    padding-right: 5px;
+  }
+ 
+
+  /* ------------ Project CSS ------------  */
+
+
+.gallery__img:hover {
+width: 101%;
 }
 
-.sizzle-grid {
-  background-color: black;
+.container {
   width: 85%;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin: 5px;  */
 }
 
-.mambo-video {
+.row {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+  flex-wrap: wrap;
+  padding: 2px;
 }
+
+.column {
+  flex: 23%;
+  margin: 5px;
+}
+
+.column img {
+  margin: 4px;
+  width: 100%;
+}
+
+  /* ------------ About CSS ------------  */
+  .aboutMe {
+    margin: auto;
+    flex-shrink: 0;
+    width: 100%;
+    height: auto;
+  }
+
+   /* ------------ Video CSS ------------  */
+   
+  .sizzle-grid {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .mambo-video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 20px; */
+  }
